@@ -1,0 +1,16 @@
+{
+  "name": "lab01",
+  "version": "0.0.1",
+  "description": "this will be sooooo cool",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "arithmetic": "^1.0.1",
+    "faker": "^4.1.0"
+  },
+  "devDependencies": {
+    "jest": "^24.1.0"
+  }
+}
