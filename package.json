@@ -1,10 +1,12 @@
 {
   "name": "lab01",
   "version": "0.0.1",
-  "description": "this will be sooooo cool",
+  "description": "My first basic test",
   "main": "index.js",
-  "scripts": {},
-  "author": "",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "Lorin Stewart",
   "license": "ISC",
   "dependencies": {
     "arithmetic": "^1.0.1",
