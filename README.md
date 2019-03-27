@@ -1,12 +1,12 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
-## Node Ecosystem
+## Node Ecosystem [![Build Status](https://travis-ci.com/L-Stewart/lab01.svg?branch=master)](https://travis-ci.com/L-Stewart/lab01)
 
 ### Author: Lorin Stewarte
 
 ### Links and Resources
 * [repo](https://github.com/L-Stewart/lab01)
-* [travis]([![Build Status](https://travis-ci.com/L-Stewart/lab01.svg?branch=master)](https://travis-ci.com/L-Stewart/lab01))
+* [travis](https://travis-ci.com/L-Stewart/lab01)
 
 ### Modules
 #### `faker`, `arithmetic`, `jest`
