@@ -6,6 +6,7 @@
 
 ### Links and Resources
 * [repo](https://github.com/L-Stewart/lab01)
+* [travis]([![Build Status](https://travis-ci.com/L-Stewart/lab01.svg?branch=master)](https://travis-ci.com/L-Stewart/lab01))
 
 ### Modules
 #### `faker`, `arithmetic`, `jest`
