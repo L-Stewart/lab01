@@ -1,0 +1,188 @@
+82776efd4da37f8a044203a695c5276b
+'use strict';
+
+/* istanbul ignore next */
+var cov_zbha23atq = function () {
+  var path = "/home/lorin/cf/401/lab01/lib/greet.js";
+  var hash = "00317179611a916e3d5116153a3d51249cd9f21d";
+
+  var Function = function () {}.constructor;
+
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/home/lorin/cf/401/lab01/lib/greet.js",
+    statementMap: {
+      "0": {
+        start: {
+          line: 3,
+          column: 14
+        },
+        end: {
+          line: 3,
+          column: 33
+        }
+      },
+      "1": {
+        start: {
+          line: 21,
+          column: 0
+        },
+        end: {
+          line: 27,
+          column: 1
+        }
+      },
+      "2": {
+        start: {
+          line: 22,
+          column: 2
+        },
+        end: {
+          line: 26,
+          column: 3
+        }
+      },
+      "3": {
+        start: {
+          line: 23,
+          column: 4
+        },
+        end: {
+          line: 23,
+          column: 35
+        }
+      },
+      "4": {
+        start: {
+          line: 25,
+          column: 4
+        },
+        end: {
+          line: 25,
+          column: 16
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 21,
+            column: 14
+          },
+          end: {
+            line: 21,
+            column: 15
+          }
+        },
+        loc: {
+          start: {
+            line: 21,
+            column: 31
+          },
+          end: {
+            line: 27,
+            column: 1
+          }
+        },
+        line: 21
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 22,
+            column: 2
+          },
+          end: {
+            line: 26,
+            column: 3
+          }
+        },
+        type: "if",
+        locations: [{
+          start: {
+            line: 22,
+            column: 2
+          },
+          end: {
+            line: 26,
+            column: 3
+          }
+        }, {
+          start: {
+            line: 22,
+            column: 2
+          },
+          end: {
+            line: 26,
+            column: 3
+          }
+        }],
+        line: 22
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {
+      "0": [0, 0]
+    },
+    _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (coverage[path] && coverage[path].hash === hash) {
+    return coverage[path];
+  }
+
+  coverageData.hash = hash;
+  return coverage[path] = coverageData;
+}();
+
+const greet =
+/* istanbul ignore next */
+(cov_zbha23atq.s[0]++, module.exports = {}); //Lorin- Demo code from class written by Vinicio
+// const secretValue = 'Kali is cute';
+// const superSecretValue = 'Kali is super cute';
+//
+// const discountXbox = () => {
+//   return 'Your xbox is now 5 dollars';
+// };
+// greet.sayHi = (name) => {
+//   return `Hello ${name}. Have you met my dog Khaleesi?`;
+// };
+//  Lorin- This prototype takes an input and will return a response if the input is a string, otherwise the returned
+//  value will be null if the input is not a string.
+
+/* istanbul ignore next */
+cov_zbha23atq.s[1]++;
+
+greet.sayHi = greetString => {
+  /* istanbul ignore next */
+  cov_zbha23atq.f[0]++;
+  cov_zbha23atq.s[2]++;
+
+  if (typeof greetString === 'string') {
+    /* istanbul ignore next */
+    cov_zbha23atq.b[0][0]++;
+    cov_zbha23atq.s[3]++;
+    return `Hello ${greetString}.`;
+  } else {
+    /* istanbul ignore next */
+    cov_zbha23atq.b[0][1]++;
+    cov_zbha23atq.s[4]++;
+    return null;
+  }
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImdyZWV0LmpzIl0sIm5hbWVzIjpbImdyZWV0IiwibW9kdWxlIiwiZXhwb3J0cyIsInNheUhpIiwiZ3JlZXRTdHJpbmciXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBRUEsTUFBTUEsS0FBSztBQUFBO0FBQUEsdUJBQUdDLE1BQU0sQ0FBQ0MsT0FBUCxHQUFpQixFQUFwQixDQUFYLEMsQ0FFQTtBQUVFO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFDQTtBQUdGO0FBQ0E7Ozs7O0FBQ0FGLEtBQUssQ0FBQ0csS0FBTixHQUFlQyxXQUFELElBQWlCO0FBQUE7QUFBQTtBQUFBOztBQUM3QixNQUFHLE9BQU9BLFdBQVAsS0FBdUIsUUFBMUIsRUFBbUM7QUFBQTtBQUFBO0FBQUE7QUFDakMsV0FBUSxTQUFRQSxXQUFZLEdBQTVCO0FBQ0QsR0FGRCxNQUVLO0FBQUE7QUFBQTtBQUFBO0FBQ0gsV0FBTyxJQUFQO0FBQ0Q7QUFDRixDQU5EIiwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBzdHJpY3QnO1xuXG5jb25zdCBncmVldCA9IG1vZHVsZS5leHBvcnRzID0ge307XG5cbi8vTG9yaW4tIERlbW8gY29kZSBmcm9tIGNsYXNzIHdyaXR0ZW4gYnkgVmluaWNpb1xuXG4gIC8vIGNvbnN0IHNlY3JldFZhbHVlID0gJ0thbGkgaXMgY3V0ZSc7XG4gIC8vIGNvbnN0IHN1cGVyU2VjcmV0VmFsdWUgPSAnS2FsaSBpcyBzdXBlciBjdXRlJztcbiAgLy9cbiAgLy8gY29uc3QgZGlzY291bnRYYm94ID0gKCkgPT4ge1xuICAvLyAgIHJldHVybiAnWW91ciB4Ym94IGlzIG5vdyA1IGRvbGxhcnMnO1xuICAvLyB9O1xuXG4gIC8vIGdyZWV0LnNheUhpID0gKG5hbWUpID0+IHtcbiAgLy8gICByZXR1cm4gYEhlbGxvICR7bmFtZX0uIEhhdmUgeW91IG1ldCBteSBkb2cgS2hhbGVlc2k/YDtcbiAgLy8gfTtcblxuXG4vLyAgTG9yaW4tIFRoaXMgcHJvdG90eXBlIHRha2VzIGFuIGlucHV0IGFuZCB3aWxsIHJldHVybiBhIHJlc3BvbnNlIGlmIHRoZSBpbnB1dCBpcyBhIHN0cmluZywgb3RoZXJ3aXNlIHRoZSByZXR1cm5lZFxuLy8gIHZhbHVlIHdpbGwgYmUgbnVsbCBpZiB0aGUgaW5wdXQgaXMgbm90IGEgc3RyaW5nLlxuZ3JlZXQuc2F5SGkgPSAoZ3JlZXRTdHJpbmcpID0+IHtcbiAgaWYodHlwZW9mIGdyZWV0U3RyaW5nID09PSAnc3RyaW5nJyl7XG4gICAgcmV0dXJuIGBIZWxsbyAke2dyZWV0U3RyaW5nfS5gO1xuICB9ZWxzZXtcbiAgICByZXR1cm4gbnVsbDtcbiAgfVxufSJdfQ==

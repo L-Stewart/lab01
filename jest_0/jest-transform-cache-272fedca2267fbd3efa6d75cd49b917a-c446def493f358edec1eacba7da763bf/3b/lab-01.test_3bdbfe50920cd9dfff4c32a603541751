@@ -1,0 +1,71 @@
+d85124dea3e12be74933f27c52d9ebdb
+'use strict'; //Lorin - Test module files.
+// const arithmetic = require('../lib/arithmetic.js');
+
+const greet = require('../lib/greet.js');
+
+const math = require('../lib/math.js'); //Lorin - load npm packages.
+
+
+const faker = require('faker');
+
+describe('#demo.test.js', () => {
+  //  Lorin- demo code from Vinicio
+  // // Vinicio - here, we'll write all our tests
+  // test('These are the basics of TDD', () =>{
+  //   // ARRANGE
+  //   const aNumber = 5;
+  //   const aNullValue = null;
+  //   const fifty = 50;
+  //
+  //   // ACT
+  //   // Vinicio - no act, because we are just showing basics
+  //
+  //   // ASSERT
+  //   expect(aNumber).toEqual(5);
+  //   expect(fifty).toBeLessThan(100);
+  //   expect(fifty).toBeGreaterThan(10);
+  //   expect(aNullValue).toBeNull();
+  //   const firstArgument = faker.random.number();
+  //   const secondArgument = faker.random.number();
+  //   // expect(myModule.myFunction(firstArgument, secondArgument).toEqual(firstArgument + secondArgument));
+  // });
+  //
+  // test('Showcasing how to add another test ', () => {
+  //   //ARRANGE
+  //   const aTruthyValue = 'hi';
+  //   const aFalsyValue = 0;
+  //
+  //   //ACT :(
+  //
+  //   //ASSERT
+  //   expect(aTruthyValue).toBeTruthy();
+  //   expect(aFalsyValue).toBeFalsy();
+  //   expect(aTruthyValue).not.toBeFalsy();
+  // });
+  test('math.add/subtract should complete if the input is aa number', () => {
+    //ARRANGE :(
+    //ACT
+    const add = math.add(1, 2);
+    const addNull = math.add(1, 'd');
+    const subtract = math.subtract(1, 2);
+    const subtractNull = math.subtract(3, 'w'); //ASSERT
+
+    expect(add).toEqual(3);
+    expect(addNull).toEqual(null);
+    expect(subtract).toEqual(-1);
+    expect(subtractNull).toEqual(null);
+  });
+  test('greet.sayHi should say hello if the input type is a string, otherwise it will return null', () => {
+    // ARRANGE :(
+    // ACT
+    const returnValue = greet.sayHi('world');
+    const testNull = greet.sayHi(123);
+    const testNumStr = greet.sayHi('123'); // ASSERT
+
+    expect(returnValue).toEqual('Hello world.');
+    expect(testNull).toEqual(null);
+    expect(testNumStr).toEqual('Hello 123.');
+  });
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxhYi0wMS50ZXN0LmpzIl0sIm5hbWVzIjpbImdyZWV0IiwicmVxdWlyZSIsIm1hdGgiLCJmYWtlciIsImRlc2NyaWJlIiwidGVzdCIsImFkZCIsImFkZE51bGwiLCJzdWJ0cmFjdCIsInN1YnRyYWN0TnVsbCIsImV4cGVjdCIsInRvRXF1YWwiLCJyZXR1cm5WYWx1ZSIsInNheUhpIiwidGVzdE51bGwiLCJ0ZXN0TnVtU3RyIl0sIm1hcHBpbmdzIjoiQUFBQSxhLENBRUE7QUFDQTs7QUFDQSxNQUFNQSxLQUFLLEdBQUdDLE9BQU8sQ0FBQyxpQkFBRCxDQUFyQjs7QUFDQSxNQUFNQyxJQUFJLEdBQUdELE9BQU8sQ0FBQyxnQkFBRCxDQUFwQixDLENBRUE7OztBQUNBLE1BQU1FLEtBQUssR0FBR0YsT0FBTyxDQUFDLE9BQUQsQ0FBckI7O0FBRUFHLFFBQVEsQ0FBQyxlQUFELEVBQWtCLE1BQU07QUFDOUI7QUFDRTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRUZDLEVBQUFBLElBQUksQ0FBQyw2REFBRCxFQUFnRSxNQUFNO0FBQ3hFO0FBQ0E7QUFDQSxVQUFNQyxHQUFHLEdBQUdKLElBQUksQ0FBQ0ksR0FBTCxDQUFTLENBQVQsRUFBWSxDQUFaLENBQVo7QUFDQSxVQUFNQyxPQUFPLEdBQUdMLElBQUksQ0FBQ0ksR0FBTCxDQUFTLENBQVQsRUFBWSxHQUFaLENBQWhCO0FBQ0EsVUFBTUUsUUFBUSxHQUFHTixJQUFJLENBQUNNLFFBQUwsQ0FBYyxDQUFkLEVBQWlCLENBQWpCLENBQWpCO0FBQ0EsVUFBTUMsWUFBWSxHQUFHUCxJQUFJLENBQUNNLFFBQUwsQ0FBYyxDQUFkLEVBQWlCLEdBQWpCLENBQXJCLENBTndFLENBUXhFOztBQUNBRSxJQUFBQSxNQUFNLENBQUNKLEdBQUQsQ0FBTixDQUFZSyxPQUFaLENBQW9CLENBQXBCO0FBQ0FELElBQUFBLE1BQU0sQ0FBQ0gsT0FBRCxDQUFOLENBQWdCSSxPQUFoQixDQUF3QixJQUF4QjtBQUNBRCxJQUFBQSxNQUFNLENBQUNGLFFBQUQsQ0FBTixDQUFpQkcsT0FBakIsQ0FBeUIsQ0FBQyxDQUExQjtBQUNBRCxJQUFBQSxNQUFNLENBQUNELFlBQUQsQ0FBTixDQUFxQkUsT0FBckIsQ0FBNkIsSUFBN0I7QUFFRCxHQWRHLENBQUo7QUFnQkFOLEVBQUFBLElBQUksQ0FBQywyRkFBRCxFQUE4RixNQUFNO0FBQ3RHO0FBQ0E7QUFDQSxVQUFNTyxXQUFXLEdBQUdaLEtBQUssQ0FBQ2EsS0FBTixDQUFZLE9BQVosQ0FBcEI7QUFDQSxVQUFNQyxRQUFRLEdBQUdkLEtBQUssQ0FBQ2EsS0FBTixDQUFZLEdBQVosQ0FBakI7QUFDQSxVQUFNRSxVQUFVLEdBQUdmLEtBQUssQ0FBQ2EsS0FBTixDQUFZLEtBQVosQ0FBbkIsQ0FMc0csQ0FPdEc7O0FBRUFILElBQUFBLE1BQU0sQ0FBQ0UsV0FBRCxDQUFOLENBQW9CRCxPQUFwQixDQUE0QixjQUE1QjtBQUNBRCxJQUFBQSxNQUFNLENBQUNJLFFBQUQsQ0FBTixDQUFpQkgsT0FBakIsQ0FBeUIsSUFBekI7QUFDQUQsSUFBQUEsTUFBTSxDQUFDSyxVQUFELENBQU4sQ0FBbUJKLE9BQW5CLENBQTJCLFlBQTNCO0FBQ0QsR0FaRyxDQUFKO0FBYUQsQ0FoRU8sQ0FBUiIsInNvdXJjZXNDb250ZW50IjpbIid1c2Ugc3RyaWN0JztcblxuLy9Mb3JpbiAtIFRlc3QgbW9kdWxlIGZpbGVzLlxuLy8gY29uc3QgYXJpdGhtZXRpYyA9IHJlcXVpcmUoJy4uL2xpYi9hcml0aG1ldGljLmpzJyk7XG5jb25zdCBncmVldCA9IHJlcXVpcmUoJy4uL2xpYi9ncmVldC5qcycpO1xuY29uc3QgbWF0aCA9IHJlcXVpcmUoJy4uL2xpYi9tYXRoLmpzJyk7XG5cbi8vTG9yaW4gLSBsb2FkIG5wbSBwYWNrYWdlcy5cbmNvbnN0IGZha2VyID0gcmVxdWlyZSgnZmFrZXInKTtcblxuZGVzY3JpYmUoJyNkZW1vLnRlc3QuanMnLCAoKSA9PiB7XG4gIC8vICBMb3Jpbi0gZGVtbyBjb2RlIGZyb20gVmluaWNpb1xuICAgIC8vIC8vIFZpbmljaW8gLSBoZXJlLCB3ZSdsbCB3cml0ZSBhbGwgb3VyIHRlc3RzXG4gICAgLy8gdGVzdCgnVGhlc2UgYXJlIHRoZSBiYXNpY3Mgb2YgVEREJywgKCkgPT57XG4gICAgLy8gICAvLyBBUlJBTkdFXG4gICAgLy8gICBjb25zdCBhTnVtYmVyID0gNTtcbiAgICAvLyAgIGNvbnN0IGFOdWxsVmFsdWUgPSBudWxsO1xuICAgIC8vICAgY29uc3QgZmlmdHkgPSA1MDtcbiAgICAvL1xuICAgIC8vICAgLy8gQUNUXG4gICAgLy8gICAvLyBWaW5pY2lvIC0gbm8gYWN0LCBiZWNhdXNlIHdlIGFyZSBqdXN0IHNob3dpbmcgYmFzaWNzXG4gICAgLy9cbiAgICAvLyAgIC8vIEFTU0VSVFxuICAgIC8vICAgZXhwZWN0KGFOdW1iZXIpLnRvRXF1YWwoNSk7XG4gICAgLy8gICBleHBlY3QoZmlmdHkpLnRvQmVMZXNzVGhhbigxMDApO1xuICAgIC8vICAgZXhwZWN0KGZpZnR5KS50b0JlR3JlYXRlclRoYW4oMTApO1xuICAgIC8vICAgZXhwZWN0KGFOdWxsVmFsdWUpLnRvQmVOdWxsKCk7XG4gICAgLy8gICBjb25zdCBmaXJzdEFyZ3VtZW50ID0gZmFrZXIucmFuZG9tLm51bWJlcigpO1xuICAgIC8vICAgY29uc3Qgc2Vjb25kQXJndW1lbnQgPSBmYWtlci5yYW5kb20ubnVtYmVyKCk7XG4gICAgLy8gICAvLyBleHBlY3QobXlNb2R1bGUubXlGdW5jdGlvbihmaXJzdEFyZ3VtZW50LCBzZWNvbmRBcmd1bWVudCkudG9FcXVhbChmaXJzdEFyZ3VtZW50ICsgc2Vjb25kQXJndW1lbnQpKTtcbiAgICAvLyB9KTtcbiAgICAvL1xuICAgIC8vIHRlc3QoJ1Nob3djYXNpbmcgaG93IHRvIGFkZCBhbm90aGVyIHRlc3QgJywgKCkgPT4ge1xuICAgIC8vICAgLy9BUlJBTkdFXG4gICAgLy8gICBjb25zdCBhVHJ1dGh5VmFsdWUgPSAnaGknO1xuICAgIC8vICAgY29uc3QgYUZhbHN5VmFsdWUgPSAwO1xuICAgIC8vXG4gICAgLy8gICAvL0FDVCA6KFxuICAgIC8vXG4gICAgLy8gICAvL0FTU0VSVFxuICAgIC8vICAgZXhwZWN0KGFUcnV0aHlWYWx1ZSkudG9CZVRydXRoeSgpO1xuICAgIC8vICAgZXhwZWN0KGFGYWxzeVZhbHVlKS50b0JlRmFsc3koKTtcbiAgICAvLyAgIGV4cGVjdChhVHJ1dGh5VmFsdWUpLm5vdC50b0JlRmFsc3koKTtcbiAgICAvLyB9KTtcblxuICB0ZXN0KCdtYXRoLmFkZC9zdWJ0cmFjdCBzaG91bGQgY29tcGxldGUgaWYgdGhlIGlucHV0IGlzIGFhIG51bWJlcicsICgpID0+IHtcbiAgICAvL0FSUkFOR0UgOihcbiAgICAvL0FDVFxuICAgIGNvbnN0IGFkZCA9IG1hdGguYWRkKDEsIDIpO1xuICAgIGNvbnN0IGFkZE51bGwgPSBtYXRoLmFkZCgxLCAnZCcpO1xuICAgIGNvbnN0IHN1YnRyYWN0ID0gbWF0aC5zdWJ0cmFjdCgxLCAyKTtcbiAgICBjb25zdCBzdWJ0cmFjdE51bGwgPSBtYXRoLnN1YnRyYWN0KDMsICd3Jyk7XG5cbiAgICAvL0FTU0VSVFxuICAgIGV4cGVjdChhZGQpLnRvRXF1YWwoMyk7XG4gICAgZXhwZWN0KGFkZE51bGwpLnRvRXF1YWwobnVsbCk7XG4gICAgZXhwZWN0KHN1YnRyYWN0KS50b0VxdWFsKC0xKTtcbiAgICBleHBlY3Qoc3VidHJhY3ROdWxsKS50b0VxdWFsKG51bGwpO1xuXG4gIH0pO1xuXG4gIHRlc3QoJ2dyZWV0LnNheUhpIHNob3VsZCBzYXkgaGVsbG8gaWYgdGhlIGlucHV0IHR5cGUgaXMgYSBzdHJpbmcsIG90aGVyd2lzZSBpdCB3aWxsIHJldHVybiBudWxsJywgKCkgPT4ge1xuICAgIC8vIEFSUkFOR0UgOihcbiAgICAvLyBBQ1RcbiAgICBjb25zdCByZXR1cm5WYWx1ZSA9IGdyZWV0LnNheUhpKCd3b3JsZCcpO1xuICAgIGNvbnN0IHRlc3ROdWxsID0gZ3JlZXQuc2F5SGkoMTIzKTtcbiAgICBjb25zdCB0ZXN0TnVtU3RyID0gZ3JlZXQuc2F5SGkoJzEyMycpO1xuXG4gICAgLy8gQVNTRVJUXG5cbiAgICBleHBlY3QocmV0dXJuVmFsdWUpLnRvRXF1YWwoJ0hlbGxvIHdvcmxkLicpO1xuICAgIGV4cGVjdCh0ZXN0TnVsbCkudG9FcXVhbChudWxsKTtcbiAgICBleHBlY3QodGVzdE51bVN0cikudG9FcXVhbCgnSGVsbG8gMTIzLicpO1xuICB9KTtcbn0pOyJdfQ==

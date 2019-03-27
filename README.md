@@ -1,29 +1,25 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
-## Project Name
+## Node Ecosystem
 
-### Author: Student/Group Name
+### Author: Lorin Stewarte
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com)
-* [front-end](http://xyz.com)
+* [repo](https://github.com/L-Stewart/lab01)
 
 ### Modules
-#### `modulename.js`
+#### `faker`, `arithmetic`, `jest`
+
 ##### Exported Values and Methods
 
-###### `foo(thing) -> string`
+###### `greet(string) -> string`
+###### `math.add(num1, num2) -> total = num1 + num2`
+###### `math.subtract(num1, num2) -> total = num1 - num2`
+
 Usage Notes or examples
 
 ###### `bar(array) -> array`
 Usage Notes or examples
-
-### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
 
 #### Running the app
 * `npm start`
